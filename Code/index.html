@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head  id="body">
+		<meta charset="UTF-8">
+		<title>Graph Visualisation</title>
+		<link rel="stylesheet" type="text/css" href="style.css" charset="utf-8">
+		
+		<script src="HTMLDOMFunctions.js" type="text/javascript"></script>
+		<script src="adapter.js" type="text/javascript"></script>
+		<script src="graph.js" type="text/javascript"></script>
+		<script src="main.js" type="text/javascript"></script>
+		
+	</head>
+	
+	<!-- vypnuti right click popup aby se dalo pohybovat pravym kliknutim -->
+	<body oncontextmenu="return false">
+		<div class="menu">
+			<div class="inputContainer" id="force1">
+			</div>
+			<div class="inputContainer" id="force2">
+			</div>
+			<div class="inputContainer" id="force3">
+			</div>
+			<div class="inputContainer" id="button1">
+			</div>
+			<div class="inputContainer" id="button2">
+			</div>			
+		</div>
+		<!-- <button type="submit" onclick="UserAction()">Search</button> -->
+		<canvas id="canvas" width="1450" height="950">
+	</body>
+</html>
