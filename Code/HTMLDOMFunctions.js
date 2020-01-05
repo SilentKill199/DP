@@ -104,6 +104,45 @@ function TextBox(containerId, defaultValue, valueSuffix)
 	}
 }
 
+//analogicky
+//vytvori texbox, ktery pracuje normalne se stringy, tohle by asi mel byt defaultni :D
+//pri dotazu an hodnotu vraci string ktery obsahuje
+function TextBoxTextMode(containerId, defaultValue)
+{
+	this.containerId = containerId;
+	this.defaultValue = defaultValue;
+	
+	this.DOMReference;
+	
+	this.InsertIntoHtml = function()
+	{
+		let inputElement = document.createElement("input");
+		
+		inputElement.setAttribute("type", "text");
+		inputElement.setAttribute("value", this.defaultValue);
+		inputElement.setAttribute("class", "textBoxTextMode");
+		
+		let textBoxId = this.containerId+"TextBoxTextMode";
+		inputElement.setAttribute("id", textBoxId);
+		
+		document.getElementById(this.containerId).appendChild(inputElement);
+		
+		this.DOMReference = document.getElementById(textBoxId);
+	}
+	
+	this.InsertIntoHtml();
+	
+	this.GetValue = function()
+	{	
+		return this.DOMReference.value;
+	}
+	
+	this.SetValue = function(value)
+	{
+		this.DOMReference.value = value;	
+	}
+}
+
 //anologicky
 //vlozi nemenitelny text do html
 function Description(containerId, descriptionString)
@@ -298,8 +337,8 @@ function CompleteInputBox (containerId, min, max, step, defaultValue, valueSuffi
 	}	
 }
 
-//tato trida spojuje decsription a dropdown menu
-//funkciaonali identicka s dropdown menu
+//tato trida spojuje description a dropdown menu
+//funkcionalita identicka s dropdown menu
 function CompleteDropdownMenu(containerId, optionsList, descriptionString)
 {
 	this.containerId = containerId;
@@ -325,13 +364,32 @@ function CompleteDropdownMenu(containerId, optionsList, descriptionString)
 	}	
 }
 
-
-
-
-
-
-
-
+//tato trida spojuje description a TextBoxTextMode
+//funkcionalita identicka s TextBoxTextMode
+function CompleteTextBoxTextMode(containerId, defaultValue, descriptionString)
+{
+	this.containerId = containerId;
+	this.defaultValue = defaultValue;
+	this.descriptionString = descriptionString;
+	
+	this.InsertIntoHtml = function()
+	{
+		this.description = new Description(this.containerId, this.descriptionString);
+		this.textBoxTextMode = new TextBoxTextMode(this.containerId, this.defaultValue);
+	}
+	
+	this.InsertIntoHtml();
+	
+	this.GetValue = function()
+	{	
+		return this.textBoxTextMode.GetValue();
+	}
+	
+	this.SetValue = function(value)
+	{
+		this.textBoxTextMode.SetValue(value);
+	}	
+}
 
 
 

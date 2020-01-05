@@ -7,13 +7,32 @@ class SPARQLAdapter
 		this.serverAdress = serverAdress;
 		this.repositoryId = repositoryId;
 		
-		this.requestResponse = "";
+		// this.requestResponse = "";
+		this.onloadDecision = 0;
+	}
+	
+	OnloadActionDecision(response)
+	{
+		if (this.onloadDecision === 1)
+		{
+			graph.ProcessNamespaceData(response);
+			return;
+		}
+		if (this.onloadDecision === 2)
+		{
+			graph.LoadGraphForSpecificNodeTriggerProcess(response);
+			return;
+		}
+		
+		console.log(response);
 	}
 	
 	EncodeIntoURLFormat(requestString)
 	{
 		return encodeURI(requestString);
 	}
+	
+	
 	
 	SendRequest(requestType, requestURL, requestHeader, requestData)
 	{
@@ -27,14 +46,17 @@ class SPARQLAdapter
 		
 		request.onload = function() 
 		{
-			sPARQLAdapter.requestResponse = this.response;
+			// sPARQLAdapter.requestResponse = this.response;
 			
-			console.log(this.response);
+			sPARQLAdapter.OnloadActionDecision(this.response);
+
 		}
 		
 		request.send(requestData);
 	}
 	
+
+
 	RequestNameSpaceInfo()
 	{
 		let requestType = "GET";
@@ -55,10 +77,14 @@ class SPARQLAdapter
 		this.SendRequest(requestType, requestURL, requestHeader, requestData);
 	}
 	
-	
-	GetRequestResponse()
+	RequestSPARQLQueryResult(SPARQLQuery)
 	{
-		return this.requestResponse;
+		let requestType = "GET";
+		let requestURL = this.serverAdress + "/" + this.repositoryId + "?query=" + this.EncodeIntoURLFormat(SPARQLQuery);
+		let requestHeader = "";
+		let requestData = "";
+		
+		this.SendRequest(requestType, requestURL, requestHeader, requestData);
 	}
 	
 	//database size

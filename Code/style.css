@@ -56,6 +56,15 @@
 	text-align: center;
 }
 
+.textBoxTextMode
+{
+	/* padding: 0px; */
+	width: 99%;
+	border: 1px solid #d3d3d3;
+	border-radius: 3px;
+	text-align: center;
+}
+
 .dropdownMenu
 {
 	width: 100%;

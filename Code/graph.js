@@ -89,6 +89,7 @@ class LiteralNode extends Node
 {
 	constructor(value) 
 	{
+		//super name???
 		super(name);
 		
 		this.value = value;
@@ -110,8 +111,16 @@ class Graph
 	{
 		this.nodes = [];
 		this.connections = [];
+		this.namespaces = [];
+		
+		this.TriggerNamespaceQuerry();
+		
+		this.waitingForProcess;
 		
 		
+		//predelat na MAP!!!!!!!!!!!!!!!!
+		
+		/*
 		this.GenerateRandomData();
 		this.GenerateRandomData();
 		this.GenerateRandomData();
@@ -136,7 +145,7 @@ class Graph
 		this.connections.push(new Connection(this.nodes[0], "test", this.nodes[55]));
 		this.connections.push(new Connection(this.nodes[0], "test", this.nodes[110]));
 		this.connections.push(new Connection(this.nodes[110], "test", this.nodes[55]));
-		
+		*/
 
 		
 		// this.nodes[0].position = [700,400];
@@ -307,13 +316,354 @@ class Graph
 		}
 	}
 	
+	//udelat tridu an querry transform
 	
-	LoadDatabaseFromRequest(database)
+	LoadGraphForSpecificNodeTrigger(nodeName)
 	{
-		console.log(database);
+		// console.log(nodeName);
 		
+		// console.log(this.TransformNodeNameIntoQueryVariable(nodeName));
+		
+		//doplnit OBOUSMERNE
+		
+		let query = `
+			SELECT ?predicate ?object
+			WHERE
+			{
+			  <` + this.TransformNodeNameIntoQueryVariable(nodeName) + `> ?predicate ?object.
+			}
+		`
+			
+		console.log(query);
+		
+		this.waitingForProcess = this.TransformNodeNameIntoQueryVariable(nodeName);
+		
+		this.TriggerSPARQLQuery(query, 2);
+	}
+	
+	//onload 2
+	LoadGraphForSpecificNodeTriggerProcess(SPARQLData)
+	{
+		console.log(SPARQLData);
+		
+		console.log(this.ParseDataToLinesWithoutHeader(SPARQLData));
+		
+		console.log(this.SplitStringByCommas(this.ParseDataToLinesWithoutHeader(SPARQLData)[0]));
+		
+		console.log(this.SplitNodeNameIntoNamespaceAndName(this.SplitStringByCommas(this.ParseDataToLinesWithoutHeader(SPARQLData)[0])[0]));
+		
+		let lines = this.ParseDataToLinesWithoutHeader(SPARQLData);
+		
+		for (let i = 0; i < lines.length; i++)
+		{	
+			this.InsertTripleIntoDatabase([this.waitingForProcess].concat(this.SplitStringByCommas(lines[i])));
+		}
+		
+		console.log(this.nodes);
 		
 	}
+	
+	InsertTripleIntoDatabase(triple)
+	{
+		console.log(triple);
+		
+		let nodeNameSplit;
+		
+		let startNode = undefined;
+		let endNode = undefined;
+		
+		//subjekt nemuze byt litaral?? snad ne :D kontrola
+		
+		let subjectName;
+		let predicateName;
+		let objectName;
+		let isObjectLiteral;
+		
+		nodeNameSplit = this.SplitNodeNameIntoNamespaceAndName(triple[0]);
+		subjectName = this.FindPrefixFromNamespace(nodeNameSplit[0]) + ":" + nodeNameSplit[1];
+		
+		nodeNameSplit = this.SplitNodeNameIntoNamespaceAndName(triple[1]);
+		predicateName = this.FindPrefixFromNamespace(nodeNameSplit[0]) + ":" + nodeNameSplit[1];
+		
+		nodeNameSplit = this.SplitNodeNameIntoNamespaceAndName(triple[2]);
+		
+		if (nodeNameSplit[0] === "")
+		{
+			isObjectLiteral = true;
+			objectName = nodeNameSplit[1];
+		}
+		else
+		{
+			isObjectLiteral = false;
+			objectName = this.FindPrefixFromNamespace(nodeNameSplit[0]) + ":" + nodeNameSplit[1];
+		}
+		
+
+		
+		console.log(objectName);
+		
+		
+		//vyresit identifikaci
+		for (let i = 0; i < this.nodes.length; i++)
+		{	
+			if (this.nodes[i].ToString() === subjectName)
+			{
+				startNode = this.nodes[i];
+			}
+		}
+		
+		if (startNode === undefined)
+		{
+			startNode = new ObjectNode(subjectName);
+			this.nodes.push(startNode);
+		}
+		
+		
+		
+		
+		if (isObjectLiteral === true)
+		{
+			endNode = new LiteralNode(objectName)
+			this.nodes.push(endNode);
+		}
+		else
+		{
+			for (let i = 0; i < this.nodes.length; i++)
+			{	
+				if (this.nodes[i].ToString() === objectName)
+				{
+					endNode = this.nodes[i];
+				}
+			}
+			
+			if (endNode === undefined)
+			{
+				endNode = new ObjectNode(objectName);
+				this.nodes.push(endNode);
+			}
+		}
+		
+		
+		console.log(startNode);
+		console.log(endNode);
+		
+		
+		let actConnection = new Connection(startNode, "predicateName", endNode);
+		
+		this.connections.push(actConnection);
+		startNode.AddConnectionOut(actConnection);
+		endNode.AddConnectionIn(actConnection);
+		
+		// if ()
+		
+		// let subjectName = FindPrefixFromNameSpace()
+		
+		
+		
+			
+		
+		// actNode = new LiteralNode("EmployeeName" + i.toString()+1);	
+			// actConnection = new Connection(employeeNodes[i], "name", actNode);
+			
+			// this.nodes.push(actNode);
+			// this.connections.push(actConnection);
+			// employeeNodes[i].AddConnectionOut(actConnection);
+			// actNode.AddConnectionIn(actConnection);
+	}
+	
+	FindPrefixFromNamespace(namespace)
+	{
+		for (let i = 0; i < this.namespaces.length; i++)
+		{
+			if (this.namespaces[i][1] === namespace)
+			{
+				return this.namespaces[i][0];
+			}
+		}
+		
+		return false;
+	}
+	
+	//udelat funkce co transformuji tam a zpet
+	
+	SplitNodeNameIntoNamespaceAndName(nodeName)
+	{
+		let i = nodeName.length-1;
+		
+		while (i !== 0)
+		{
+			//lomitko
+			if (nodeName[i].charCodeAt(0) === 47)
+			{
+				return [nodeName.substring(0,i+1), nodeName.substring(i+1,nodeName.length)];
+			}
+			
+			i--;
+		}
+		
+		return ["", nodeName];
+	}
+	
+	SplitStringByCommas(string)
+	{
+		let lineElements = [];
+		
+		let i = 0;
+		let lastStart = 0;
+		//carka
+		while (i < string.length)
+		{
+			if (string[i].charCodeAt(0)=== 44)
+			{
+				lineElements.push(string.substring(lastStart, i));
+				i++;	
+				lastStart = i;
+			}
+			
+			i++;
+		}
+		
+		lineElements.push(string.substring(lastStart, i));
+		
+		return lineElements;
+	}
+	
+	TransformNodeNameIntoQueryVariable(nodeName)
+	{
+		let nodeNameSplit = this.SplitNodeNameIntoPrefixAndName(nodeName);
+		
+		return this.FindNamespaceFromPrefix(nodeNameSplit[0]) + nodeNameSplit[1];
+	}
+	
+	SplitNodeNameIntoPrefixAndName(nodeName)
+	{
+		let i = 0;
+		//dvojtecka
+		while (nodeName[i].charCodeAt(0) !== 58)
+		{
+			i++;
+		}
+		
+		return [nodeName.substring(0,i), nodeName.substring(i+1,nodeName.length)];
+	}
+	
+	FindNamespaceFromPrefix(prefix)
+	{
+		for (let i = 0; i < this.namespaces.length; i++)
+		{
+			if (this.namespaces[i][0] === prefix)
+			{
+				return this.namespaces[i][1];
+			}
+		}
+		
+		return false;
+	}
+	
+	
+	TriggerSPARQLQuery(query, onloadDecision)
+	{	
+		sPARQLAdapter.onloadDecision = onloadDecision;
+		sPARQLAdapter.RequestSPARQLQueryResult(query);	
+	}
+	
+	
+	
+	//popremyslet jak to struktualizovat
+	
+	ParseDataToLinesWithoutHeader(data)
+	{
+		let lines = [];
+		let actLine = "";
+		let i = 0;
+		
+		while (i < data.length)
+		{
+			if (data[i].charCodeAt(0) === 13 && data[i+1].charCodeAt(0) === 10)
+			{
+				lines.push(actLine);
+				
+				actLine = "";
+				i += 2;
+				
+				continue;
+			}
+			
+			actLine += data[i];
+				
+			i++;
+		}
+		
+		//odstarnime hlavicku
+		lines.shift();
+		
+		return lines;
+	}
+	
+	TriggerNamespaceQuerry()
+	{
+		sPARQLAdapter.onloadDecision = 1;
+		sPARQLAdapter.RequestNameSpaceInfo();
+	}
+	
+	//onload 1
+	ProcessNamespaceData(namespaceData)
+	{
+		console.log(namespaceData);
+		
+		let i = 0;
+		
+		//preskocime hlavicku
+		while (namespaceData[i].charCodeAt(0) !== 13 && namespaceData[i+1].charCodeAt(0) !== 10)
+		{
+			i++;
+		}
+		i += 2;
+		
+		let state = 1;
+		let actPrefix = "";
+		let actNamespace = "";
+		
+		while (i < namespaceData.length)
+		{
+			//carka
+			if (namespaceData[i].charCodeAt(0) === 44)
+			{
+				state = 2;
+				i++;
+				continue;				
+			}
+			
+			//line feed a carriage return
+			if (namespaceData[i].charCodeAt(0) === 13 && namespaceData[i+1].charCodeAt(0) === 10)
+			{
+				state = 1;
+				
+				this.namespaces.push([actPrefix, actNamespace]);
+				
+				actPrefix = "";
+				actNamespace = "";
+				
+				i += 2;
+				
+				continue;
+			}
+			
+			if (state === 1)
+			{
+				actPrefix += namespaceData[i];
+			}
+			else if (state === 2)
+			{
+				actNamespace += namespaceData[i];
+			}
+				
+			i++;
+		}
+		
+		// console.log(this.namespaces);
+	}
+	
 	
 	
 	
@@ -511,8 +861,14 @@ class Graph
 			
 			// console.log(this.totalForce);
 			
+			// console.log(actNode.position);
+			
+			
 			actNode.position = this.AddVectors(actNode.position, this.MultiplyVector(actNode.movementVector, 1/10));
+			
+			// console.log(actNode.position);
 		}
+		// console.log("---");
 	}
 	
 	

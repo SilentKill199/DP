@@ -14,6 +14,12 @@ let force1;
 let force2;
 let force3;
 
+let button1;
+let button2;
+let button3;
+
+let textBoxTextMode1;
+
 
 let frameCounter = 0;
 
@@ -26,6 +32,8 @@ function InsertHTMLElements()
 	force3 = new CompleteInputBox("force3", 1, 10, 0.01, 1, "", "Force 3:");
 	button1 = new Button("button1", "Button1Function()","Button1!");
 	button2 = new Button("button2", "Button2Function()","Button2!");
+	textBoxTextMode1 = new CompleteTextBoxTextMode("input1", "ex:bookID1", "Object to display:");
+	button2 = new Button("button3", "Button3Function()","Button3!");
 }
 
 function SychnronizeHTMLElements()
@@ -46,14 +54,12 @@ function init()
 
 	InsertHTMLElements();
 	
-	graph = new Graph();
-	console.log(graph);
-	
-	// sPARQLAdapter = new SPARQLAdapter("http://localhost:8080/rdf4j-server/repositories/","rdf1");
-	sPARQLAdapter = new SPARQLAdapter("http://localhost:8080/rdf4j-server/repositories/","RDFTestOneID");
+	sPARQLAdapter = new SPARQLAdapter("http://localhost:8080/rdf4j-server/repositories/","rdf1");
+	// sPARQLAdapter = new SPARQLAdapter("http://localhost:8080/rdf4j-server/repositories/","RDFTestOneID");
 	console.log(sPARQLAdapter);
 	
-	
+	graph = new Graph();
+	console.log(graph);
 	
 	context.transform(1,0,0,1,0,0);
 
@@ -80,7 +86,7 @@ function draw()
 	
 	context.fillStyle = "#EEEEEE";
 	context.fillRect(0, 0, canvas.width, canvas.height);
-	
+
 	graph.CalculateForcesForAllNodes();
 	graph.MoveAccordingToForces();
 	
@@ -115,6 +121,7 @@ let test2 = `<?xml version="1.0"?>
 </rdf:RDF>`
 
 
+
 function Button1Function() 
 {
 	sPARQLAdapter.RequestWholeDatabase();
@@ -124,7 +131,29 @@ function Button2Function()
 {
 	// graph.LoadDatabaseFromRequest(sPARQLAdapter.GetRequestResponse());
 	
-	sPARQLAdapter.RequestNameSpaceInfo()
+	// sPARQLAdapter.RequestNameSpaceInfo();
+	
+	// sPARQLAdapter.RequestSPARQLQueryResult(queryOne);
+}
+
+function Button3Function() 
+{
+	// graph.LoadDatabaseFromRequest(sPARQLAdapter.GetRequestResponse());
+	
+	// sPARQLAdapter.RequestNameSpaceInfo();
+	
+	// let query = `
+	// SELECT ?predicate ?object
+	// WHERE
+	// {
+	  // <http://example/bookID1> ?predicate ?object.
+	// }`
+
+	// sPARQLAdapter.onloadDecision = 1;
+	// sPARQLAdapter.RequestSPARQLQueryResult(query);
+	
+	
+	graph.LoadGraphForSpecificNodeTrigger(textBoxTextMode1.GetValue());
 }
 
 
