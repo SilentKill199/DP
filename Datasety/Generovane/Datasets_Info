@@ -1,0 +1,227 @@
+//Potom udelat nejakou databazi ukazkovou kde to bude vicecetny
+
+People parametry:
+jeste bez connectedViaRailroad
+
+
+//-1--------------------------------------------------------------
+156 trojic
+
+//tady muze byt nula, ale lepsi je tam mit alespon 1
+int minNumberOfPeopleInCluster = 10;
+int maxNumberOfPeopleInCluster = 10;
+
+int clusterTreeDepth = 1;
+
+float connectionsClusterDistribution = 0.5;
+//minimum alespon 1, jinak problem s nahodnym
+int minNumberOfConnections = 2;
+int maxNumberOfConnections = 2;
+
+//zadna ochrana proti preteceni
+//max 607
+int numberOfCities = 5;
+//max 91
+int numberOfCompanies = 5;
+//max 44
+int numberOfHobbies = 5;
+
+//neni ochrana proti podteceni, min musi byt mensi nebo rovno maxu
+int personDoesMin = 0;
+int personDoesMax = 2;
+
+int citySupportsMin = 1;
+int citySupportsMax = 3;
+
+int companyOfficesMin = 1;
+int companyOfficesMax = 5;
+
+int cityCooperatesMin = 0;
+int cityCooperatesMax = 2;
+
+int companyTradesMin = 1;
+int companyTradesMax = 2;
+
+
+//-2---------------------------------------------------------------
+1237 trojic
+
+//tady muze byt nula, ale lepsi je tam mit alespon 1
+int minNumberOfPeopleInCluster = 10;
+int maxNumberOfPeopleInCluster = 10;
+
+int clusterTreeDepth = 2;
+
+float connectionsClusterDistribution = 0.5;
+//minimum alespon 1, jinak problem s nahodnym
+int minNumberOfConnections = 4;
+int maxNumberOfConnections = 4;
+
+//zadna ochrana proti preteceni
+//max 607
+int numberOfCities = 10;
+//max 91
+int numberOfCompanies = 10;
+//max 44
+int numberOfHobbies = 10;
+
+//neni ochrana proti podteceni, min musi byt mensi nebo rovno maxu
+int personDoesMin = 0;
+int personDoesMax = 2;
+
+int citySupportsMin = 1;
+int citySupportsMax = 3;
+
+int companyOfficesMin = 1;
+int companyOfficesMax = 5;
+
+int cityCooperatesMin = 0;
+int cityCooperatesMax = 2;
+
+int companyTradesMin = 1;
+int companyTradesMax = 2;
+
+//-3---------------------------------------------------------------
+11748 trojic
+
+//tady muze byt nula, ale lepsi je tam mit alespon 1
+int minNumberOfPeopleInCluster = 8;
+int maxNumberOfPeopleInCluster = 12;
+
+int clusterTreeDepth = 3;
+
+float connectionsClusterDistribution = 0.5;
+//minimum alespon 1, jinak problem s nahodnym
+int minNumberOfConnections = 6;
+int maxNumberOfConnections = 6;
+
+//zadna ochrana proti preteceni
+//max 607
+int numberOfCities = 40;
+//max 91
+int numberOfCompanies = 40;
+//max 44
+int numberOfHobbies = 40;
+
+//neni ochrana proti podteceni, min musi byt mensi nebo rovno maxu
+int personDoesMin = 0;
+int personDoesMax = 2;
+
+int citySupportsMin = 1;
+int citySupportsMax = 3;
+
+int companyOfficesMin = 1;
+int companyOfficesMax = 5;
+
+int cityCooperatesMin = 0;
+int cityCooperatesMax = 2;
+
+int companyTradesMin = 1;
+int companyTradesMax = 2;
+
+
+//-4---------------------------------------------------------------
+105368 trojic
+
+//tady muze byt nula, ale lepsi je tam mit alespon 1
+int minNumberOfPeopleInCluster = 8;
+int maxNumberOfPeopleInCluster = 10;
+
+int clusterTreeDepth = 4;
+
+float connectionsClusterDistribution = 0.5;
+//minimum alespon 1, jinak problem s nahodnym
+int minNumberOfConnections = 7;
+int maxNumberOfConnections = 7;
+
+//zadna ochrana proti preteceni
+//max 607
+int numberOfCities = 607;
+//max 91
+int numberOfCompanies = 91;
+//max 44
+int numberOfHobbies = 44;
+
+//neni ochrana proti podteceni, min musi byt mensi nebo rovno maxu
+int personDoesMin = 0;
+int personDoesMax = 2;
+
+int citySupportsMin = 1;
+int citySupportsMax = 3;
+
+int companyOfficesMin = 1;
+int companyOfficesMax = 5;
+
+int cityCooperatesMin = 0;
+int cityCooperatesMax = 2;
+
+int companyTradesMin = 1;
+int companyTradesMax = 2;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Cities:
+Ukazka vicetnych propojeni
+185 trojic
+
+//tady muze byt nula, ale lepsi je tam mit alespon 1
+int minNumberOfPeopleInCluster = 10;
+int maxNumberOfPeopleInCluster = 10;
+
+int clusterTreeDepth = 1;
+
+float connectionsClusterDistribution = 0.5;
+//minimum alespon 1, jinak problem s nahodnym
+int minNumberOfConnections = 2;
+int maxNumberOfConnections = 2;
+
+//zadna ochrana proti preteceni
+//max 607
+int numberOfCities = 10;
+//max 91
+int numberOfCompanies = 1;
+//max 44
+int numberOfHobbies = 1;
+
+//neni ochrana proti podteceni, min musi byt mensi nebo rovno maxu
+int personDoesMin = 1;
+int personDoesMax = 1;
+
+int citySupportsMin = 1;
+int citySupportsMax = 1;
+
+int companyOfficesMin = 1;
+int companyOfficesMax = 1;
+
+int cityCooperatesMin = 2;
+int cityCooperatesMax = 2;
+
+int cityConnectedViaRailroadMin = 3;
+int cityConnectedViaRailroadMax = 3;
+
+int companyTradesMin = 1;
+int companyTradesMax = 1;
+

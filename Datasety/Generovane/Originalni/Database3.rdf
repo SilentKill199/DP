@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:ex="http://example.org/"
+>
+
+<rdf:Description rdf:about="http://example.org/personId_1">
+	<ex:name>Liboslav Král</ex:name>
+	<ex:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19</ex:age>
+	<ex:weigthInKg rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">68</ex:weigthInKg>
+	<ex:heightInCm rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">173</ex:heightInCm>
+	<ex:knows rdf:resource="http://example.org/personId_2"></ex:knows>
+	<ex:knows rdf:resource="http://example.org/personId_3"></ex:knows>
+	<ex:knows rdf:resource="http://example.org/personId_4"></ex:knows>
+	<ex:knows rdf:resource="http://example.org/personId_8"></ex:knows>
+	<ex:livesIn rdf:resource="http://example.org/cityId_4"></ex:livesIn>
+	<ex:worksAt rdf:resource="http://example.org/companyId_3"></ex:worksAt>
+	<ex:does rdf:resource="http://example.org/hobbyId_2"></ex:does>
+	<ex:does rdf:resource="http://example.org/hobbyId_4"></ex:does>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://example.org/personId_2">
+	<ex:name>Marcel Zeman</ex:name>
+	<ex:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">34</ex:age>
+	<ex:weigthInKg rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">95</ex:weigthInKg>
+	<ex:heightInCm rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">165</ex:heightInCm>
+	<ex:knows rdf:resource="http://example.org/personId_1"></ex:knows>
+	<ex:knows rdf:resource="http://example.org/personId_3"></ex:knows>
+	<ex:knows rdf:resource="http://example.org/personId_4"></ex:knows>
+	<ex:knows rdf:resource="http://example.org/personId_5"></ex:knows>
+	<ex:livesIn rdf:resource="http://example.org/cityId_1"></ex:livesIn>
+	<ex:worksAt rdf:resource="http://example.org/companyId_2"></ex:worksAt>
+	<ex:does rdf:resource="http://example.org/hobbyId_4"></ex:does>
+	<ex:does rdf:resource="http://example.org/hobbyId_3"></ex:does>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://example.org/personId_3">
+	<ex:name>Jiřina Valentová</ex:name>
+	<ex:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">36</ex:age>
+	<ex:weigthInKg rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">61</ex:weigthInKg>
+	<ex:heightInCm rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">161</ex:heightInCm>
+	<ex:knows rdf:resource="http://example.org/personId_4"></ex:knows>
+	<ex:knows rdf:resource="http://example.org/personId_1"></ex:knows>
+	<ex:knows rdf:resource="http://example.org/personId_2"></ex:knows>
+	<ex:knows rdf:resource="http://example.org/personId_7"></ex:knows>
+	<ex:livesIn rdf:resource="http://example.org/cityId_1"></ex:livesIn>
+	<ex:worksAt rdf:resource="http://example.org/companyId_2"></ex:worksAt>
+	<ex:does rdf:resource="http://example.org/hobbyId_1"></ex:does>
+	<ex:does rdf:resource="http://example.org/hobbyId_4"></ex:does>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://example.org/personId_4">
+	<ex:name>Karina Hájková</ex:name>
+	<ex:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45</ex:age>
+	<ex:weigthInKg rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">73</ex:weigthInKg>
+	<ex:heightInCm rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">175</ex:heightInCm>
+	<ex:knows rdf:resource="http://example.org/personId_3"></ex:knows>
+	<ex:knows rdf:resource="http://example.org/personId_2"></ex:knows>
+	<ex:knows rdf:resource="http://example.org/personId_6"></ex:knows>
+	<ex:knows rdf:resource="http://example.org/personId_8"></ex:knows>
+	<ex:livesIn rdf:resource="http://example.org/cityId_4"></ex:livesIn>
+	<ex:worksAt rdf:resource="http://example.org/companyId_1"></ex:worksAt>
+	<ex:does rdf:resource="http://example.org/hobbyId_1"></ex:does>
+	<ex:does rdf:resource="http://example.org/hobbyId_4"></ex:does>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://example.org/personId_5">
+	<ex:name>Oliver Konečný</ex:name>
+	<ex:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">51</ex:age>
+	<ex:weigthInKg rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">69</ex:weigthInKg>
+	<ex:heightInCm rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">186</ex:heightInCm>
+	<ex:knows rdf:resource="http://example.org/personId_6"></ex:knows>
+	<ex:knows rdf:resource="http://example.org/personId_8"></ex:knows>
+	<ex:knows rdf:resource="http://example.org/personId_7"></ex:knows>
+	<ex:knows rdf:resource="http://example.org/personId_2"></ex:knows>
+	<ex:livesIn rdf:resource="http://example.org/cityId_4"></ex:livesIn>
+	<ex:worksAt rdf:resource="http://example.org/companyId_1"></ex:worksAt>
+	<ex:does rdf:resource="http://example.org/hobbyId_5"></ex:does>
+	<ex:does rdf:resource="http://example.org/hobbyId_2"></ex:does>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://example.org/personId_6">
+	<ex:name>Daria Benešová</ex:name>
+	<ex:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">44</ex:age>
+	<ex:weigthInKg rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">85</ex:weigthInKg>
+	<ex:heightInCm rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200</ex:heightInCm>
+	<ex:knows rdf:resource="http://example.org/personId_5"></ex:knows>
+	<ex:knows rdf:resource="http://example.org/personId_7"></ex:knows>
+	<ex:knows rdf:resource="http://example.org/personId_4"></ex:knows>
+	<ex:knows rdf:resource="http://example.org/personId_2"></ex:knows>
+	<ex:livesIn rdf:resource="http://example.org/cityId_2"></ex:livesIn>
+	<ex:worksAt rdf:resource="http://example.org/companyId_5"></ex:worksAt>
+	<ex:does rdf:resource="http://example.org/hobbyId_2"></ex:does>
+	<ex:does rdf:resource="http://example.org/hobbyId_3"></ex:does>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://example.org/personId_7">
+	<ex:name>Světoslav Kratochvíl</ex:name>
+	<ex:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">54</ex:age>
+	<ex:weigthInKg rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">79</ex:weigthInKg>
+	<ex:heightInCm rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">193</ex:heightInCm>
+	<ex:knows rdf:resource="http://example.org/personId_8"></ex:knows>
+	<ex:knows rdf:resource="http://example.org/personId_5"></ex:knows>
+	<ex:knows rdf:resource="http://example.org/personId_3"></ex:knows>
+	<ex:knows rdf:resource="http://example.org/personId_1"></ex:knows>
+	<ex:livesIn rdf:resource="http://example.org/cityId_4"></ex:livesIn>
+	<ex:worksAt rdf:resource="http://example.org/companyId_3"></ex:worksAt>
+	<ex:does rdf:resource="http://example.org/hobbyId_4"></ex:does>
+	<ex:does rdf:resource="http://example.org/hobbyId_1"></ex:does>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://example.org/personId_8">
+	<ex:name>Antonín Konečný</ex:name>
+	<ex:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">22</ex:age>
+	<ex:weigthInKg rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">87</ex:weigthInKg>
+	<ex:heightInCm rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">197</ex:heightInCm>
+	<ex:knows rdf:resource="http://example.org/personId_7"></ex:knows>
+	<ex:knows rdf:resource="http://example.org/personId_6"></ex:knows>
+	<ex:knows rdf:resource="http://example.org/personId_3"></ex:knows>
+	<ex:knows rdf:resource="http://example.org/personId_1"></ex:knows>
+	<ex:livesIn rdf:resource="http://example.org/cityId_4"></ex:livesIn>
+	<ex:worksAt rdf:resource="http://example.org/companyId_2"></ex:worksAt>
+	<ex:does rdf:resource="http://example.org/hobbyId_3"></ex:does>
+	<ex:does rdf:resource="http://example.org/hobbyId_4"></ex:does>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://example.org/cityId_1">
+	<ex:name>Šluknov</ex:name>
+	<ex:population rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5615</ex:population>
+	<ex:areaInMSquared rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">47.46</ex:areaInMSquared>
+	<ex:supports rdf:resource="http://example.org/hobbyId_4"></ex:supports>
+	<ex:cooperatesWith rdf:resource="http://example.org/cityId_3"></ex:cooperatesWith>
+	<ex:cooperatesWith rdf:resource="http://example.org/cityId_2"></ex:cooperatesWith>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://example.org/cityId_2">
+	<ex:name>Zbiroh</ex:name>
+	<ex:population rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2500</ex:population>
+	<ex:areaInMSquared rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">31.94</ex:areaInMSquared>
+	<ex:supports rdf:resource="http://example.org/hobbyId_3"></ex:supports>
+	<ex:cooperatesWith rdf:resource="http://example.org/cityId_5"></ex:cooperatesWith>
+	<ex:cooperatesWith rdf:resource="http://example.org/cityId_1"></ex:cooperatesWith>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://example.org/cityId_3">
+	<ex:name>Kladruby</ex:name>
+	<ex:population rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1618</ex:population>
+	<ex:areaInMSquared rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">48.6</ex:areaInMSquared>
+	<ex:supports rdf:resource="http://example.org/hobbyId_2"></ex:supports>
+	<ex:cooperatesWith rdf:resource="http://example.org/cityId_5"></ex:cooperatesWith>
+	<ex:cooperatesWith rdf:resource="http://example.org/cityId_1"></ex:cooperatesWith>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://example.org/cityId_4">
+	<ex:name>Znojmo</ex:name>
+	<ex:population rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">33780</ex:population>
+	<ex:areaInMSquared rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">65.89</ex:areaInMSquared>
+	<ex:supports rdf:resource="http://example.org/hobbyId_2"></ex:supports>
+	<ex:cooperatesWith rdf:resource="http://example.org/cityId_2"></ex:cooperatesWith>
+	<ex:cooperatesWith rdf:resource="http://example.org/cityId_1"></ex:cooperatesWith>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://example.org/cityId_5">
+	<ex:name>Mladá Boleslav</ex:name>
+	<ex:population rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">44489</ex:population>
+	<ex:areaInMSquared rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">28.9</ex:areaInMSquared>
+	<ex:supports rdf:resource="http://example.org/hobbyId_2"></ex:supports>
+	<ex:cooperatesWith rdf:resource="http://example.org/cityId_1"></ex:cooperatesWith>
+	<ex:cooperatesWith rdf:resource="http://example.org/cityId_3"></ex:cooperatesWith>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://example.org/companyId_1">
+	<ex:name>AGROFERT</ex:name>
+	<ex:type>a.s.</ex:type>
+	<ex:profitInMld rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">155</ex:profitInMld>
+	<ex:hasOfficesIn rdf:resource="http://example.org/cityId_1"></ex:hasOfficesIn>
+	<ex:hasOfficesIn rdf:resource="http://example.org/cityId_2"></ex:hasOfficesIn>
+	<ex:hasOfficesIn rdf:resource="http://example.org/cityId_5"></ex:hasOfficesIn>
+	<ex:tradesWith rdf:resource="http://example.org/companyId_5"></ex:tradesWith>
+	<ex:tradesWith rdf:resource="http://example.org/companyId_4"></ex:tradesWith>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://example.org/companyId_2">
+	<ex:name>Krajská zdravotní</ex:name>
+	<ex:type>a.s.</ex:type>
+	<ex:profitInMld rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</ex:profitInMld>
+	<ex:hasOfficesIn rdf:resource="http://example.org/cityId_5"></ex:hasOfficesIn>
+	<ex:hasOfficesIn rdf:resource="http://example.org/cityId_3"></ex:hasOfficesIn>
+	<ex:hasOfficesIn rdf:resource="http://example.org/cityId_2"></ex:hasOfficesIn>
+	<ex:tradesWith rdf:resource="http://example.org/companyId_4"></ex:tradesWith>
+	<ex:tradesWith rdf:resource="http://example.org/companyId_3"></ex:tradesWith>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://example.org/companyId_3">
+	<ex:name>Iveco Czech Republic</ex:name>
+	<ex:type>a.s.</ex:type>
+	<ex:profitInMld rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">22</ex:profitInMld>
+	<ex:hasOfficesIn rdf:resource="http://example.org/cityId_3"></ex:hasOfficesIn>
+	<ex:hasOfficesIn rdf:resource="http://example.org/cityId_4"></ex:hasOfficesIn>
+	<ex:hasOfficesIn rdf:resource="http://example.org/cityId_5"></ex:hasOfficesIn>
+	<ex:tradesWith rdf:resource="http://example.org/companyId_4"></ex:tradesWith>
+	<ex:tradesWith rdf:resource="http://example.org/companyId_1"></ex:tradesWith>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://example.org/companyId_4">
+	<ex:name>Adient Bor</ex:name>
+	<ex:type>s.r.o.</ex:type>
+	<ex:profitInMld rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</ex:profitInMld>
+	<ex:hasOfficesIn rdf:resource="http://example.org/cityId_4"></ex:hasOfficesIn>
+	<ex:hasOfficesIn rdf:resource="http://example.org/cityId_1"></ex:hasOfficesIn>
+	<ex:hasOfficesIn rdf:resource="http://example.org/cityId_3"></ex:hasOfficesIn>
+	<ex:tradesWith rdf:resource="http://example.org/companyId_1"></ex:tradesWith>
+	<ex:tradesWith rdf:resource="http://example.org/companyId_5"></ex:tradesWith>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://example.org/companyId_5">
+	<ex:name>Česká pošta</ex:name>
+	<ex:type>s.p.</ex:type>
+	<ex:profitInMld rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</ex:profitInMld>
+	<ex:hasOfficesIn rdf:resource="http://example.org/cityId_3"></ex:hasOfficesIn>
+	<ex:hasOfficesIn rdf:resource="http://example.org/cityId_2"></ex:hasOfficesIn>
+	<ex:hasOfficesIn rdf:resource="http://example.org/cityId_4"></ex:hasOfficesIn>
+	<ex:tradesWith rdf:resource="http://example.org/companyId_1"></ex:tradesWith>
+	<ex:tradesWith rdf:resource="http://example.org/companyId_4"></ex:tradesWith>
+</rdf:Description>
+
+</rdf:RDF>
