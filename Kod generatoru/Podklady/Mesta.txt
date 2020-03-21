@@ -1,0 +1,607 @@
+Praha	1308632	496.21
+Brno	380681	230.18
+Ostrava	289128	214.22
+Plzeň	172441	137.67
+Liberec	104445	106.08
+Olomouc	100523	103.33
+České Budějovice	94014	55.60
+Ústí nad Labem	92952	93.96
+Hradec Králové	92742	105.68
+Pardubice	90688	82.65
+Zlín	74997	102.82
+Havířov	71903	32.07
+Kladno	69054	36.96
+Most	66186	86.94
+Opava	56638	90.60
+Frýdek-Místek	55931	51.55
+Karviná	52824	57.52
+Jihlava	50845	87.86
+Teplice	49575	23.78
+Děčín	48809	117.69
+Chomutov	48720	29.25
+Karlovy Vary	48501	59.08
+Jablonec nad Nisou	45802	31.38
+Mladá Boleslav	44489	28.90
+Prostějov	43680	39.04
+Přerov	43186	58.44
+Česká Lípa	37444	66.09
+Třebíč	35691	57.59
+Třinec	35131	85.35
+Tábor	34456	62.21
+Znojmo	33780	65.89
+Příbram	32642	33.45
+Cheb	31988	96.35
+Kolín	31690	34.99
+Trutnov	30372	103.31
+Písek	30351	63.23
+Orlová	28852	24.66
+Kroměříž	28816	50.97
+Vsetín	26092	57.60
+Šumperk	25957	27.88
+Uherské Hradiště	25212	21.25
+Břeclav	24704	77.18
+Hodonín	24682	63.30
+Český Těšín	24438	33.80
+Litoměřice	24001	17.98
+Litvínov	23884	40.69
+Nový Jičín	23496	36.52
+Krnov	23397	44.29
+Havlíčkův Brod	23256	64.93
+Sokolov	23241	22.91
+Chrudim	23151	33.20
+Strakonice	22754	34.67
+Klatovy	22233	80.85
+Valašské Meziříčí	22217	35.43
+Kopřivnice	21949	27.48
+Jindřichův Hradec	21445	74.28
+Vyškov	20883	50.47
+Žďár nad Sázavou	20847	37.06
+Bohumín	20690	31.02
+Kutná Hora	20580	33.07
+Blansko	20572	44.97
+Náchod	19979	33.34
+Beroun	19510	31.25
+Mělník	19486	24.96
+Jirkov	19299	17.12
+Brandýs nad Labem-Stará Boleslav	19136	22.65
+Žatec	19133	42.67
+Louny	18351	24.13
+Kadaň	18202	65.62
+Kralupy nad Vltavou	18194	21.90
+Hranice	18057	49.77
+Otrokovice	17876	19.62
+Bílina	17166	32.51
+Svitavy	16838	31.33
+Ostrov	16731	50.40
+Benešov	16656	46.87
+Jičín	16577	24.95
+Uherský Brod	16493	52.06
+Rožnov pod Radhoštěm	16420	39.48
+Bruntál	16408	29.34
+Neratovice	16163	20.00
+Pelhřimov	16069	95.27
+Rakovník	15846	18.50
+Slaný	15834	35.11
+Říčany	15619	25.81
+Dvůr Králové nad Labem	15594	35.84
+Česká Třebová	15508	40.99
+Varnsdorf	15297	26.23
+Nymburk	15063	20.58
+Klášterec nad Ohří	14533	53.78
+Turnov	14334	22.71
+Ústí nad Orlicí	14196	36.36
+Rokycany	14192	30.67
+Poděbrady	14186	33.68
+Hlučín	13953	21.13
+Zábřeh	13589	34.59
+Šternberk	13495	48.78
+Chodov	13394	14.26
+Aš	13210	55.85
+Český Krumlov	13085	22.16
+Roudnice nad Labem	12967	16.67
+Tachov	12802	40.84
+Mariánské Lázně	12800	51.79
+Krupka	12624	46.60
+Vrchlabí	12461	27.64
+Jaroměř	12433	23.95
+Vysoké Mýto	12335	42.02
+Čelákovice	12260	15.87
+Milovice	11834	28.30
+Nový Bor	11678	19.44
+Boskovice	11622	27.81
+Holešov	11606	33.94
+Vlašim	11598	41.42
+Velké Meziříčí	11484	40.66
+Uničov	11396	48.27
+Kyjov	11218	29.88
+Jeseník	11192	38.23
+Domažlice	11150	24.61
+Sušice	11110	45.63
+Rumburk	11082	24.71
+Veselí nad Moravou	11006	35.45
+Rychnov nad Kněžnou	10998	34.98
+Kuřim	10997	17.19
+Humpolec	10894	51.51
+Prachatice	10874	38.91
+Frenštát pod Radhoštěm	10820	11.43
+Litomyšl	10429	33.45
+Čáslav	10326	26.45
+Nové Město na Moravě	10098	61.12
+Moravská Třebová	10070	42.04
+Lanškroun	9991	20.65
+Frýdlant nad Ostravicí	9964	21.90
+Litovel	9810	46.39
+Ivančice	9742	47.60
+Lysá nad Labem	9717	33.67
+Hlinsko	9677	24.26
+Přelouč	9659	30.46
+Studénka	9536	30.91
+Jesenice	9448	17.53
+Nové Město nad Metují	9436	23.13
+Králův Dvůr	9357	15.23
+Tišnov	9257	17.11
+Chotěboř	9250	54.04
+Mohelnice	9189	46.20
+Nová Paka	9094	28.68
+Dobříš	8983	53.41
+Lovosice	8837	11.89
+Polička	8748	33.11
+Mnichovo Hradiště	8729	34.32
+Štětí	8685	53.89
+Choceň	8646	21.69
+Hořice	8621	21.43
+Hostivice	8546	14.48
+Roztoky	8529	8.18
+Duchcov	8517	15.40
+Příbor	8452	22.15
+Semily	8367	16.30
+Červený Kostelec	8352	24.07
+Milevsko	8277	42.31
+Třeboň	8253	98.31
+Rýmařov	8247	60.72
+Bystřice pod Hostýnem	8169	26.81
+Bystřice nad Pernštejnem	8110	53.05
+Lipník nad Bečvou	8024	30.60
+Týn nad Vltavou	8000	43.02
+Dubí	7870	33.84
+Nejdek	7807	52.27
+Hrádek nad Nisou	7722	48.54
+Stříbro	7680	47.77
+Šlapanice	7563	14.64
+Frýdlant	7531	31.61
+Rychvald	7457	17.02
+Broumov	7444	22.26
+Bílovec	7419	38.87
+Benátky nad Jizerou	7418	35.50
+Vimperk	7399	80.04
+Moravské Budějovice	7364	37.13
+Mikulov	7359	45.31
+Dačice	7325	66.99
+Vratimov	7297	14.13
+Sezimovo Ústí	7257	8.44
+Odry	7227	74.05
+Napajedla	7222	19.82
+Petřvald	7190	12.62
+Černošice	7170	9.05
+Kaplice	7164	40.84
+Přeštice	7114	25.40
+Sedlčany	7080	36.46
+Český Brod	7046	19.70
+Nový Bydžov	6986	35.27
+Nýřany	6975	22.78
+Soběslav	6968	19.99
+Vodňany	6953	36.33
+Hořovice	6844	9.54
+Hulín	6819	32.11
+Kraslice	6749	81.34
+Letovice	6745	51.01
+Úvaly	6744	10.96
+Dobruška	6727	34.43
+Kravaře	6695	19.37
+Slavkov u Brna	6694	14.94
+Staré Město	6652	20.83
+Blatná	6583	43.60
+Holice	6574	19.65
+Světlá nad Sázavou	6566	42.07
+Bučovice	6496	31.19
+Slavičín	6468	33.65
+Mimoň	6434	15.48
+Letohrad	6402	23.54
+Šenov	6400	16.63
+Podbořany	6368	60.16
+Veselí nad Lužnicí	6367	29.56
+Dubňany	6349	22.58
+Chrastava	6281	27.46
+Tanvald	6252	12.44
+Rosice	6237	12.73
+Kostelec nad Orlicí	6201	26.20
+Dobřany	6154	35.31
+Hronov	6125	22.03
+Žamberk	6104	16.90
+Kojetín	6103	31.09
+Železný Brod	6069	22.50
+Týniště nad Orlicí	6058	52.45
+Odolena Voda	6022	11.23
+Hustopeče	5964	24.53
+Mníšek pod Brdy	5832	26.49
+Třešť	5766	46.98
+Třebechovice pod Orebem	5748	21.00
+Moravský Krumlov	5729	49.55
+Vítkov	5725	55.04
+Týnec nad Sázavou	5715	25.74
+Rousínov	5673	23.04
+Úpice	5661	15.30
+Fulnek	5656	68.48
+Šluknov	5615	47.46
+Kunovice	5606	28.54
+Strážnice	5560	31.40
+Jablunkov	5547	10.38
+Lomnice nad Popelkou	5541	25.57
+Brumov-Bylnice	5540	56.27
+Zubří	5540	28.38
+Nové Strašecí	5517	13.31
+Františkovy Lázně	5514	25.76
+Hradec nad Moravicí	5489	43.95
+Chlumec nad Cidlinou	5462	21.44
+Stochov	5416	9.49
+Horní Slavkov	5414	36.86
+Planá	5413	62.46
+Hluboká nad Vltavou	5410	91.10
+Jilemnice	5391	13.85
+Horažďovice	5310	43.03
+Modřice	5296	10.05
+Telč	5276	24.87
+Česká Kamenice	5247	38.76
+Doksy	5206	74.96
+Velká Bíteš	5193	47.30
+Holýšov	5191	29.31
+Kdyně	5169	28.74
+Bakov nad Jizerou	5156	27.00
+Trhové Sviny	5154	52.77
+Jílové	5147	36.56
+Polná	5141	37.77
+Rudná	5137	8.19
+Starý Plzenec	5105	18.37
+Bechyně	5097	21.29
+Kosmonosy	5093	11.38
+Česká Skalice	5078	17.36
+Ledeč nad Sázavou	5074	17.01
+Pohořelice	5051	43.04
+Skuteč	5046	35.40
+Luhačovice	5045	32.99
+Vrbno pod Pradědem	5040	68.91
+Třemošná	5031	18.11
+Horšovský Týn	5006	71.30
+Valašské Klobouky	4951	26.94
+Nýrsko	4920	31.54
+Chropyně	4889	19.00
+Náměšť nad Oslavou	4871	18.62
+Habartov	4846	21.38
+Heřmanův Městec	4835	14.34
+Protivín	4830	61.45
+Meziboří	4810	14.36
+Vizovice	4800	28.56
+Kynšperk nad Ohří	4789	23.31
+Bělá pod Bezdězem	4786	63.19
+Unhošť	4779	17.41
+Jílové u Prahy	4770	16.25
+Pečky	4769	10.76
+Pacov	4758	35.86
+Osek	4757	42.36
+Zruč nad Sázavou	4750	16.41
+Postoloprty	4716	46.55
+Oslavany	4693	18.70
+Votice	4587	36.42
+Vracov	4557	44.40
+Vamberk	4532	21.02
+Adamov	4517	3.78
+Cvikov	4484	45.05
+Klimkovice	4468	14.63
+Bystřice	4422	63.35
+Lišov	4405	93.55
+Bojkovice	4395	41.87
+Chlumec	4380	12.87
+Rožmitál pod Třemšínem	4375	52.97
+Bzenec	4361	40.33
+Hostinné	4361	8.06
+Hluk	4340	28.39
+Bor	4306	116.51
+Kostelec nad Labem	4281	15.55
+Uherský Ostroh	4267	26.53
+Horní Bříza	4213	14.54
+Králíky	4196	52.77
+Slatiňany	4187	15.60
+Zdice	4179	13.80
+Borovany	4173	42.33
+Jaroměřice nad Rokytnou	4163	51.37
+Nová Role	4161	13.53
+Blovice	4140	28.96
+Planá nad Lužnicí	4132	21.41
+Police nad Metují	4086	24.41
+Dolní Benešov	4043	14.80
+Brušperk	4024	10.26
+Přibyslav	4012	35.31
+Jemnice	4001	32.49
+Stráž pod Ralskem	3977	21.58
+Sezemice	3945	22.15
+Kamenický Šenov	3919	10.46
+Velké Bílovice	3907	25.73
+Velešín	3899	13.23
+Paskov	3890	11.80
+Větřní	3882	27.71
+Mnichovice	3861	8.32
+Rajhrad	3852	9.49
+Židlochovice	3826	5.93
+Zlaté Hory	3796	85.92
+Zbýšov	3784	6.01
+Volary	3780	107.52
+Kamenice nad Lipou	3766	31.53
+Brtnice	3758	74.12
+Smržovka	3751	14.81
+Rájec-Jestřebí	3737	15.67
+Lanžhot	3733	54.81
+Nepomuk	3732	12.78
+Kostelec nad Černými lesy	3723	17.69
+Sázava	3720	20.41
+Benešov nad Ploučnicí	3716	9.77
+Toužim	3705	98.55
+Lom	3700	16.80
+Fryšták	3697	24.16
+Velké Opatovice	3685	25.93
+Dobřichovice	3675	10.92
+Nové Město pod Smrkem	3674	28.92
+Lázně Bělohrad	3665	28.38
+Jiříkov	3640	13.32
+Jablonné v Podještědí	3622	57.87
+Stod	3589	20.03
+Klecany	3589	10.16
+Zliv	3569	14.20
+Valtice	3557	47.84
+Město Albrechtice	3529	65.27
+Lázně Bohdaneč	3525	21.78
+Březnice	3523	19.46
+Suchdol nad Lužnicí	3522	63.58
+České Velenice	3521	12.08
+Kralovice	3504	39.80
+Řevnice	3498	10.14
+Libochovice	3496	15.64
+Buštěhrad	3464	7.60
+Krásná Lípa	3453	31.41
+Štramberk	3438	9.33
+Dobrovice	3394	24.63
+Velká Bystřice	3384	9.21
+Libčice nad Vltavou	3383	7.10
+Újezd u Brna	3368	13.07
+Libušín	3346	9.48
+Trmice	3332	6.66
+Hrušovany nad Jevišovkou	3330	25.29
+Staňkov	3317	20.49
+Nová Bystřice	3281	81.79
+Veverská Bítýška	3270	13.60
+Sadská	3234	16.44
+Jablonné nad Orlicí	3189	4.37
+Hanušovice	3169	36.81
+Košťany	3166	24.30
+Opočno	3136	14.01
+Žacléř	3134	21.82
+Břidličná	3129	25.81
+Uhlířské Janovice	3126	25.46
+Velké Pavlovice	3119	23.24
+Ždírec nad Doubravou	3104	26.72
+Chrast	3098	17.83
+Desná	3086	12.57
+Kaznějov	3075	12.30
+Třemošnice	3065	19.00
+Loket	3055	26.73
+Velvary	3044	18.09
+Volyně	3023	20.58
+Podivín	3011	17.75
+Rotava	2999	12.02
+Rtyně v Podkrkonoší	2997	13.88
+Slušovice	2980	7.10
+Loštice	2979	11.99
+Chvaletice	2971	8.50
+Moravský Beroun	2957	51.22
+Kostelec na Hané	2951	13.86
+Teplá	2946	113.22
+Miroslav	2945	26.59
+Hodkovice nad Mohelkou	2944	13.49
+Ivanovice na Hané	2942	21.43
+Morkovice-Slížany	2924	21.14
+Terezín	2924	13.53
+Žirovnice	2921	44.41
+Budišov nad Budišovkou	2908	79.15
+Úštěk	2901	74.94
+Smiřice	2899	10.67
+Městec Králové	2877	19.86
+Vejprty	2871	9.76
+Sedlec-Prčice	2854	64.13
+Raspenava	2851	41.21
+Zákupy	2850	40.77
+Jevíčko	2841	23.22
+Hrádek	2831	6.05
+Spálené Poříčí	2820	57.81
+Kunštát	2787	24.20
+Konice	2784	24.44
+Javorník	2768	77.42
+Dolní Bousov	2761	24.30
+Koryčany	2756	41.12
+Český Dub	2752	22.57
+Rychnov u Jablonce nad Nisou	2749	12.25
+Březová	2725	59.58
+Hejnice	2721	38.41
+Plasy	2715	57.14
+Mladá Vožice	2704	31.59
+Kelč	2689	27.83
+Golčův Jeníkov	2673	27.49
+Velké Hamry	2650	9.31
+Rokytnice nad Jizerou	2640	36.94
+Neveklov	2638	54.46
+Vyšší Brod	2621	69.75
+Nové Sedlo	2599	16.97
+Netolice	2587	26.34
+Luže	2560	30.70
+Počátky	2551	30.83
+Rudolfov	2544	3.19
+Karolinka	2528	42.14
+Nové Hrady	2524	79.74
+Chabařovice	2518	16.89
+Jáchymov	2511	50.77
+Bohušovice nad Ohří	2505	8.62
+Zbiroh	2500	31.94
+Ždánice	2481	20.81
+Chýnov	2480	30.50
+Tovačov	2467	22.76
+Klobouky u Brna	2453	31.27
+Dolní Kounice	2453	8.97
+Meziměstí	2429	25.70
+Slavonice	2386	45.80
+Sobotka	2371	19.32
+Kryry	2345	39.44
+Nechanice	2329	27.98
+Žlutice	2305	53.00
+Plumlov	2304	11.51
+Dašice	2303	17.72
+Janovice nad Úhlavou	2270	28.47
+Mirošov	2263	13.63
+Nová Včelnice	2254	10.10
+Horní Benešov	2253	20.39
+Horní Jiřetín	2241	39.85
+Kardašova Řečice	2199	45.82
+Mikulášovice	2189	25.84
+Solnice	2188	12.66
+Město Touškov	2187	9.63
+Žebrák	2181	8.51
+Budyně nad Ohří	2175	33.56
+Luby	2146	30.69
+Veltrusy	2131	8.00
+Hranice	2129	31.79
+Ralsko	2117	170.22
+Horní Planá	2088	127.16
+Proseč	2084	34.03
+Kopidlno	2080	29.13
+Borohrádek	2079	13.98
+Týnec nad Labem	2063	15.69
+Svoboda nad Úpou	2062	7.75
+Horní Jelení	2058	24.47
+Hroznětín	2041	23.78
+Nový Knín	2039	29.62
+Rokytnice v Orlických horách	2022	40.19
+Štíty	2021	29.92
+Hrochův Týnec	2021	12.49
+Jistebnice	2013	57.98
+Skalná	1999	23.43
+Němčice nad Hanou	1999	12.06
+Hrob	1998	11.11
+Třebenice	1982	21.85
+Velký Šenov	1982	19.82
+Bochov	1980	95.69
+Pyšely	1971	12.81
+Zásmuky	1965	24.12
+Smečno	1962	9.58
+Plesná	1935	19.25
+Žandov	1895	27.23
+Kouřim	1885	14.39
+Lučany nad Nisou	1859	13.13
+Vroutek	1846	52.67
+Radnice	1832	10.65
+Horní Cerekev	1822	31.98
+Lomnice nad Lužnicí	1778	18.88
+Hostomice	1765	28.26
+Libáň	1764	19.67
+Hrotovice	1751	20.91
+Hoštka	1749	18.80
+Bělá nad Radbuzou	1745	83.32
+Černovice	1733	36.52
+Dolní Poustevna	1732	11.05
+Staré Město	1726	86.26
+Dubá	1723	60.59
+Seč	1720	36.68
+Jesenice	1719	37.59
+Vlachovo Březí	1713	19.97
+Ronov nad Doubravou	1686	17.01
+Nasavrky	1679	12.56
+Švihov	1678	34.53
+Oloví	1672	19.04
+Olešnice	1672	12.51
+Březová nad Svitavou	1655	12.70
+Plánice	1653	55.61
+Jablonec nad Jizerou	1645	22.32
+Železná Ruda	1631	79.77
+Rožďalovice	1629	23.90
+Teplice nad Metují	1626	56.06
+Kladruby	1618	48.60
+Mirovice	1614	22.04
+Přimda	1584	50.63
+Poběžovice	1574	27.82
+Bavorov	1572	35.40
+Bystré	1540	14.10
+Mýto	1538	17.80
+Všeruby	1493	23.57
+Lázně Kynžvart	1474	32.57
+Kožlany	1451	29.10
+Husinec	1451	10.34
+Kašperské Hory	1449	44.12
+Mšeno	1431	26.73
+Strmilov	1425	30.60
+Harrachov	1421	36.63
+Strážov	1417	35.70
+Svratka	1403	14.50
+Trhový Štěpánov	1387	28.90
+Chřibská	1349	15.95
+Hostouň	1325	38.51
+Habry	1317	27.42
+Železnice	1303	13.09
+Brandýs nad Orlicí	1303	4.32
+Kasejovice	1292	34.39
+Vysoké nad Jizerou	1290	20.66
+Vidnava	1282	4.26
+Rovensko pod Troskami	1277	12.80
+Pilníkov	1269	16.98
+Sedlice	1252	30.52
+Žulová	1247	14.75
+Mirotice	1222	25.60
+Úsov	1183	9.31
+Potštát	1179	34.07
+Nalžovské Hory	1172	51.28
+Jevišovice	1168	7.85
+Verneřice	1158	31.40
+Černošín	1150	42.20
+Měčín	1145	38.89
+Manětín	1142	84.64
+Špindlerův Mlýn	1119	76.93
+Osečná	1116	28.05
+Krásná Hora nad Vltavou	1107	36.79
+Liběchov	1083	11.77
+Červená Řečice	1003	26.46
+Blšany	999	36.34
+Bělčice	981	34.31
+Abertamy	975	8.69
+Hartmanice	974	62.19
+Bezdružice	951	32.01
+Bečov nad Teplou	934	19.81
+Miletín	912	8.93
+Vysoké Veselí	865	9.33
+Stráž nad Nežárkou	862	36.29
+Deštná	749	12.69
+Krásno	709	25.35
+Janské Lázně	699	13.73
+Pec pod Sněžkou	657	52.10
+Lipnice nad Sázavou	654	11.14
+Stárkov	644	16.52
+Chyše	579	28.62
+Mašťov	570	23.05
+Ledvice	544	4.96
+Rabí	503	14.32
+Úterý	470	25.90
+Hora Svaté Kateřiny	453	18.45
+Horní Blatná	412	5.62
+Krásné Údolí	400	9.16
+Výsluní	373	30.33
+Rožmberk nad Vltavou	364	24.81
+Andělská Hora	357	15.90
+Janov	293	11.03
+Rejštejn	255	30.43
+Boží Dar	253	37.91
+Loučná pod Klínovcem	111	20.88
+Přebuz	73	29.79

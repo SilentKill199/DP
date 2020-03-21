@@ -1,0 +1,225 @@
+proste jsem to vlozil do webaps v tom catu tu slozku s workbench a server
+pak uz jsi to udela samo co potrebuje
+
+nastavit enviromental variables 
+catalina home
+jre home
+java home - na jdk ale na stolnim to neni potreba?
+
+service.bat install - to nainstaluje tomcat9
+
+https://tomcat.apache.org/tomcat-9.0-doc/windows-service-howto.html
+
+
+
+https://rdf4j.eclipse.org/documentation/tools/server-workbench/
+
+https://tomcat.apache.org/tomcat-9.0-doc/manager-howto.html
+
+http://localhost:8080/rdf4j-workbench atd...
+
+https://stackoverflow.com/questions/30738717/javascript-canvas-clear-redraw
+
+---------------------------------------------------------------------------------------------------
+
+https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame
+http://www.williammalone.com/articles/create-html5-canvas-javascript-sprite-animation/
+https://spicyyoghurt.com/tutorials/html5-javascript-game-development/create-a-proper-game-loop-with-requestanimationframe
+https://www.w3schools.com/tags/ref_canvas.asp
+
+UTF 8??? zatim nic
+
+https://rdf4j.eclipse.org/documentation/tools/console/
+
+konzole se pousti pres bin
+
+
+https://rdf4j.eclipse.org/documentation/rest-api/
+
+https://www.w3.org/TR/2013/REC-sparql11-update-20130321/
+
+
+https://www.youtube.com/watch?v=7YcW25PHnAA
+
+https://stackoverflow.com/questions/36975619/how-to-call-a-rest-web-service-api-from-javascript
+
+https://www.taniarascia.com/how-to-connect-to-an-api-with-javascript/
+
+
+https://tomcat.apache.org/tomcat-9.0-doc/config/filter.html#CORS_Filter
+
+
+<filter>
+  <filter-name>CorsFilter</filter-name>
+  <filter-class>org.apache.catalina.filters.CorsFilter</filter-class>
+  <init-param>
+    <param-name>cors.allowed.origins</param-name>
+    <param-value>*</param-value>
+  </init-param>
+  <init-param>
+    <param-name>cors.allowed.methods</param-name>
+    <param-value>GET,POST,HEAD,OPTIONS,PUT,DELETE</param-value>
+  </init-param>
+  <init-param>
+    <param-name>cors.allowed.headers</param-name>
+    <param-value>Content-Type,X-Requested-With,accept,Origin,Access-Control-Request-Method,Access-Control-Request-Headers</param-value>
+  </init-param>
+  <init-param>
+    <param-name>cors.exposed.headers</param-name>
+    <param-value>Access-Control-Allow-Origin,Access-Control-Allow-Credentials</param-value>
+  </init-param>
+</filter>
+<filter-mapping>
+  <filter-name>CorsFilter</filter-name>
+  <url-pattern>/*</url-pattern>
+</filter-mapping>
+
+-----------------------------------------------------------------------------------------------------
+
+C:\Windows\ServiceProfiles\LocalService\AppData\Roaming\RDF4J\Server
+
+
+PREFIX ex: <http://example/>
+
+INSERT DATA
+{
+  GRAPH <http://example/bookStore> 
+  { 
+	ex:bookID1	ex:price	1;
+				ex:author 	"author1";
+    			ex:type		ex:book;
+  }
+  GRAPH <http://example/bookStore> 
+  { 
+	ex:bookId2	ex:price	2;
+				ex:author 	"author2";
+    			ex:type		ex:book;
+  }
+  
+  GRAPH <http://example/bookStore> 
+  { 
+	ex:bookId3	ex:price	3;
+				ex:author 	"author1";
+    			ex:type		ex:book;
+  }
+}
+
+
+PREFIX ex: <http://example/>
+SELECT ?bookID
+WHERE
+{
+  ?bookID ex:author "author1".
+}
+
+
+
+http://www.dfki.uni-kl.de/~mschroeder/demo/sparql-rest-api/
+
+
+https://codyburleson.com/sparql-examples-select/
+
+
+https://www.w3.org/TR/sparql11-protocol/
+
+-----------------------------------------------------------------------------------
+https://stackoverflow.com/questions/2242086/how-to-detect-the-screen-resolution-with-javascript
+
+https://en.wikipedia.org/wiki/Graph_drawing
+
+https://pdfs.semanticscholar.org/9f0f/5a1507b83f96bcedbf2b8971fde21948b086.pdf
+
+
+
+
+
+
+
+
+
+//------------------------------------------------------------------
+https://www.leda-tutorial.org/en/unofficial/ch05s03s08.html
+
+https://www.fmf.uni-lj.si/~zitnik/dmii/graph_drawing_tutorial.pdf
+
+
+https://stats.stackexchange.com/questions/51519/list-of-graph-layout-algorithms
+http://yifanhu.net/index.html
+http://yifanhu.net/PUB/ch16.pdf
+http://yifanhu.net/PUB/graph_draw_small.pdf
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
+
+https://www.youtube.com/watch?v=Dhh1Dfm9Eao
+//webgl
+
+http://philogb.github.io/blog/2009/09/30/force-directed-layouts/
+
+
+
+https://dvcs.w3.org/hg/rdf/raw-file/default/rdf-xml/index.html
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+http://w3schools.sinsixx.com/rdf/rdf_example.asp.htm
+http://w3schools.sinsixx.com/rdf/rdfvalidationresult.htm
+https://www.w3.org/RDF/Validator/
+
+
+
+Konzultace
+vic nez jeden prefix? generator
+ma byt graf souvisly - ted to vypisuju vsechno
+naprilad pridat ze nejaka osoba sefuje firme a ta by mela vice sipek???
+presne navhr uzivatelskeho rozhrani
+jak se vypordat s entitama co maji hodne spojeni atd...
+https://www.w3.org/wiki/DataSetRDFDumps
+jakym zusobem otestovat rozsahla data - hodne v prohlizeci nebo treba jen performance z databaze?
+muze uzivatel zadavat vlastni dotazy??
+mira interakce pro uzivatele
+fyzika real time
+
+
+// https://wiki.dbpedia.org/downloads-2016-04
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

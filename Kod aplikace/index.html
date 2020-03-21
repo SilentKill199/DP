@@ -1,0 +1,57 @@
+<!-- Bc. Tomáš Jarůšek, 20.3.2020 -->
+<!-- Nástroj pro vizualizaci rozsáhlých RDF databází -->
+<!-- Implementováno v JavaScripu za pomoci prvku canvas, načítání databáze probíhá přes REST API (rdf4j API) -->
+<!-- Součást diplomové práce na téma Vizualizace rozsáhlých grafových dat na webu (vedoucí: Ing. Radek Burget Ph.D.), FIT VUTBR 2020 -->
+
+<!DOCTYPE html>
+<html>
+	<head  id="body">
+		<meta charset="UTF-8">
+		<title>RDF database visualizer</title>
+		<link rel="stylesheet" type="text/css" href="style.css" charset="utf-8">
+		
+		<script src="mouse.js" type="text/javascript"></script>
+		<script src="HTMLDOMFunctions.js" type="text/javascript"></script>
+		<script src="quadTree.js" type="text/javascript"></script>
+		<script src="controller.js" type="text/javascript"></script>
+		<script src="adapter.js" type="text/javascript"></script>
+		<script src="graph.js" type="text/javascript"></script>
+		<script src="main.js" type="text/javascript"></script>
+		
+	</head>
+	
+	<!-- vypnuti right click popup aby se dalo pohybovat pravym kliknutim -->
+	<body oncontextmenu="return false">
+	
+		<div class="menu">
+			<div class="inputContainer" id="input3">
+			</div>
+			<div class="inputContainer" id="input1">
+			</div>
+			<div class="inputContainer" id="checkbox1">
+			</div>
+			<div class="inputContainer" id="checkbox2">
+			</div>
+			<div class="inputContainer" id="slider1">
+			</div>
+			<div class="inputContainer" id="slider2">
+			</div>
+			<div class="inputContainer" id="dropdownMenu1">
+			</div>
+			<div class="inputContainer" id="input2">
+			</div>
+			<div class="inputContainer" id="button1">
+			</div>
+			<div class="inputContainer" id="button2">
+			</div>
+			<div class="inputContainer" id="button4">
+			</div>
+			<div class="inputContainer" id="button3">
+			</div>
+			<div class="inputContainer" id="button5">
+			</div>
+		</div>
+		
+		<canvas id="canvas" width="1450" height="950">
+	</body>
+</html>
